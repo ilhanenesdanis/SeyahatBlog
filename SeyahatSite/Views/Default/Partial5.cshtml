@@ -1,0 +1,16 @@
+﻿@using SeyahatSite.Models.Sınıflar
+@model List<Blog>
+<div class="box1-left">
+    @foreach (var x in Model)
+    {
+
+
+    <div class="bot-img">
+        <img src="@x.BlogImage" alt="" />
+    </div>
+    <div class="bot-desc1">
+        <p>@x.Acıklama.Substring(0,50)</p>
+    </div>
+    <div class="clear"></div>
+    }
+</div>
